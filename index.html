@@ -25,6 +25,10 @@
   <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
   <script defer src="js/script.js"></script>
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link href="/css/animations.css" rel="stylesheet">
+
   <title>REKA'S &mdash; Page</title>
 </head>
 
@@ -54,7 +58,7 @@
   <main>
     <section class="section-hero">
       <div class="hero">
-        <div class="hero-text-box">
+        <div class="hero-text-box slide-in-left">
           <h1 class="heading-primary">
             Dërgo biznesin tuaj në tjetër nivel
           </h1>
@@ -66,7 +70,7 @@
           <a href="#how" class="btn btn--outline">Më shumë &darr;</a>
 
         </div>
-        <div class="hero-img-box">
+        <div class="hero-img-box slide-in-right">
           <!-- <picture>
             <source srcset="img/hero.webp" type="image/webp" />
             <source srcset="img/hero-min.png" type="image/png" />
@@ -102,7 +106,7 @@
 
       <div class="container grid grid--2-cols grid--center-v">
         <!-- Tablet -->
-        <div class="step-text-box">
+        <div class="step-text-box " data-aos="fade-right">
           <h3 class="heading-tertiary">
             Lorem ipsum dolor sit amet
           </h3>
@@ -111,16 +115,15 @@
             accusamus quisquam doloremque fugiat repellat. Lorem ipsum dolor sit amet.
           </p>
         </div>
-
-        <div class="">
+        <div class="" data-aos="fade-right">
           <img src="img/app/tablet.svg" class="step-img" alt="restaurants menu on tablet" />
         </div>
 
         <!-- Laptop -->
-        <div class="">
+        <div class="" data-aos="fade-left">
           <img src="img/app/laptop.svg" class="step-img" alt="dashboard for management" />
         </div>
-        <div class="step-text-box">
+        <div class="step-text-box" data-aos="fade-left">
           <h3 class="heading-tertiary">Lorem ipsum dolor sit amet</h3>
           <p class="step-description">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus deserunt hic molestias quod accusantium
@@ -129,14 +132,14 @@
         </div>
 
         <!-- PC -->
-        <div class="step-text-box">
+        <div class="step-text-box" data-aos="fade-right">
           <h3 class="heading-tertiary">Lorem ipsum dolor sit amet</h3>
           <p class="step-description">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus deserunt hic molestias quod accusantium
             accusamus quisquam doloremque fugiat repellat. Lorem ipsum dolor sit amet.
           </p>
         </div>
-        <div class="">
+        <div class="" data-aos="fade-right">
           <img src="img/app/desktop.svg" class="step-img" alt="POS" />
         </div>
       </div>
@@ -148,7 +151,7 @@
         <h2 class="heading-secondary">Once you have it, you can't go back!</h2>
 
         <div class="testimonials">
-          <figure class="testimonial">
+          <figure class="testimonial" data-aos="fade-up">
             <img class="testimonial-img" alt="Photo of customer Dave Bryson" src="img/customers/customer-1.jpg" />
             <blockquote class="testimonial-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, molestiae!
@@ -156,15 +159,15 @@
             <p class="testimonial-name">&mdash; Tia Gordon</p>
           </figure>
 
-          <figure class="testimonial">
-            <img class="testimonial-img" alt="Photo of customer Ben Hadley" src="img/customers/customer-2.jpg" />
+          <figure class="testimonial" data-aos="fade-up">
+            <img class=" testimonial-img" alt="Photo of customer Ben Hadley" src="img/customers/customer-2.jpg" />
             <blockquote class="testimonial-text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, id repellat tempore nobis dolore quaerat.
             </blockquote>
             <p class="testimonial-name">&mdash; Scott Pearson</p>
           </figure>
 
-          <figure class="testimonial">
+          <figure class="testimonial" data-aos="fade-up">
             <img class="testimonial-img" alt="Photo of customer Steve Miller" src="img/customers/customer-3.jpg" />
             <blockquote class="testimonial-text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reiciendis perferendis aliquam
@@ -173,7 +176,7 @@
             <p class="testimonial-name">&mdash; Melissa Baxter</p>
           </figure>
 
-          <figure class="testimonial">
+          <figure class="testimonial" data-aos="fade-up">
             <img class="testimonial-img" alt="Photo of customer Hannah Smith" src="img/customers/customer-4.jpg" />
             <blockquote class="testimonial-text">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt commodi molestias totam ullam nisi.
@@ -195,7 +198,7 @@
       </div>
 
       <div class="container grid grid--2-cols margin-bottom-md">
-        <div class="pricing-plan pricing-plan--starter">
+        <div class="pricing-plan pricing-plan--starter" data-aos="flip-left" data-aos-duration="1300">
           <header class="plan-header">
             <p class="plan-name">Standard</p>
             <p class="plan-price"><span>$</span>80</p>
@@ -228,7 +231,7 @@
           </div>
         </div>
 
-        <div class="pricing-plan pricing-plan--complete">
+        <div class="pricing-plan pricing-plan--complete" data-aos="flip-right" data-aos-duration="1300">
           <header class="plan-header">
             <p class="plan-name">Professional</p>
             <p class="plan-price"><span>$</span>199</p>
@@ -270,7 +273,7 @@
       </div>
 
       <div class="container grid grid--4-cols">
-        <div class="feature">
+        <div class="feature" data-aos="zoom-in" data-aos-duration="500">
           <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
           <p class="feature-title">Never cook again!</p>
           <p class="feature-text">
@@ -278,7 +281,7 @@
             holidays.
           </p>
         </div>
-        <div class="feature">
+        <div class="feature" data-aos="zoom-in" data-aos-duration="800">
           <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
           <p class="feature-title">Local and organic</p>
           <p class="feature-text">
@@ -286,7 +289,7 @@
             your meals.
           </p>
         </div>
-        <div class="feature">
+        <div class="feature" data-aos="zoom-in" data-aos-duration="1100">
           <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
           <p class="feature-title">No waste</p>
           <p class="feature-text">
@@ -294,7 +297,7 @@
             meals.
           </p>
         </div>
-        <div class="feature">
+        <div class="feature" data-aos="zoom-in" data-aos-duration="1400">
           <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
           <p class="feature-title">Pause anytime</p>
           <p class="feature-text">
@@ -435,7 +438,11 @@
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
