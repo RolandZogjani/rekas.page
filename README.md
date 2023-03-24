@@ -1,2 +1,2 @@
-#Landing page project using HTML&CSS
+#Landing page project using HTML, CSS, JS
 https://rolandzogjani.github.io/rekas.page/
